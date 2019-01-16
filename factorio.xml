@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Server: Games:</Category>
+  <Name>factorio</Name>
+  <Description>
+    Factorio headless server
+  </Description>
+  <Overview>
+    Factorio headless server
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38930.0</Support>
+  <Registry>https://hub.docker.com/r/dtandersen/factorio</Registry>
+  <GitHub>https://github.com/dtandersen/docker_factorio_server/tree/master/0.16</GitHub>
+  <Repository>dtandersen/docker_factorio_server</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>34197</HostPort>
+        <ContainerPort>34197</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>27015</HostPort>
+        <ContainerPort>27015</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/factorio</HostDir>
+      <ContainerDir>/factorio</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Container>
