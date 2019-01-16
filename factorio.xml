@@ -11,7 +11,7 @@
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=38930.0</Support>
   <Registry>https://hub.docker.com/r/dtandersen/factorio</Registry>
-  <GitHub>https://github.com/dtandersen/docker_factorio_server/tree/master/0.16</GitHub>
+  <GitHub>https://github.com/dtandersen/docker_factorio_server</GitHub>
   <Repository>dtandersen/docker_factorio_server</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
