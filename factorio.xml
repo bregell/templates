@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Beta>False</Beta>
-  <Category>Server: Games:</Category>
-  <Name>factorio</Name>
-  <Description>
-    Factorio headless server
-  </Description>
-  <Overview>
-    Factorio headless server
-  </Overview>
-  <Support></Support>
+  <Name>Factorio</Name>
+  <Description>Factorio server</Description>
   <Registry>https://hub.docker.com/r/dtandersen/factorio/</Registry>
-  <GitHub>https://github.com/bregell/docker_factorio_server/blob/master/0.16/</GitHub>
-  <Repository>bregell/docker_factorio_server</Repository>
+  <Repository>dtandersen/factorio</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Environment/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -30,8 +22,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/factorio</HostDir>
@@ -39,4 +29,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Icon>https://wiki.factorio.com/images/Factorio-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Container>
