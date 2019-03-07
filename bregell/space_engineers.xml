@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Space Engineers</Name>
+  <Name>space-engineers-server</Name>
   <Description>Space Engineers Dedicated Server</Description>
   <Registry>https://hub.docker.com/r/bregell/space_enginners_dedicated_ubuntu/</Registry>
   <Repository>bregell/space_enginners_dedicated_ubuntu</Repository>
