@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Space Engineers</Name>
+  <Description>Space Engineers Dedicated Server</Description>
+  <Registry>https://hub.docker.com/r/ianomaly/docker-ubuntu-steamcmd/</Registry>
+  <Repository>ianomaly/docker-ubuntu-steamcmd</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>27016</HostPort>
+        <ContainerPort>27016</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8766</HostPort>
+        <ContainerPort>8766</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/space_engineers</HostDir>
+      <ContainerDir>/mnt/steam/space-engineers-server</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://spaceengineerswiki.com/images/1/1b/S_e_logo_black.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
