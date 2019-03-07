@@ -2,8 +2,8 @@
 <Container>
   <Name>Space Engineers</Name>
   <Description>Space Engineers Dedicated Server</Description>
-  <Registry>https://hub.docker.com/r/ianomaly/docker-ubuntu-steamcmd/</Registry>
-  <Repository>ianomaly/docker-ubuntu-steamcmd</Repository>
+  <Registry>https://hub.docker.com/r/bregell/space_enginners_dedicated_ubuntu/</Registry>
+  <Repository>bregell/space_enginners_dedicated_ubuntu</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
