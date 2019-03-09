@@ -2,8 +2,8 @@
 <Container>
   <Name>space-engineers-server</Name>
   <Description>Space Engineers Dedicated Server</Description>
-  <Registry>https://hub.docker.com/r/bregell/space_enginners_dedicated_ubuntu/</Registry>
-  <Repository>bregell/space_enginners_dedicated_ubuntu</Repository>
+  <Registry>https://hub.docker.com/r/bregell/space_engineers_dedicated/</Registry>
+  <Repository>bregell/space_engineers_dedicated</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -24,8 +24,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/space_engineers</HostDir>
+      <HostDir>/mnt/user/appdata/space_engineers/install</HostDir>
       <ContainerDir>/mnt/steam/space-engineers-server</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/space_engineers/data</HostDir>
+      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application\ Data/SpaceEngineersDedicated</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
