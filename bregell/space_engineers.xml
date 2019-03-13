@@ -42,8 +42,7 @@
        Description="This is the name and path to the server save"
        Mask="false"
        Display="always"
-       Required="true">DefaultSavePath
-  </Config>
+       Required="true">DefaultSavePath</Config>
   <Icon>https://spaceengineerswiki.com/images/1/1b/S_e_logo_black.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
