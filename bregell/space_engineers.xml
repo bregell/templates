@@ -24,13 +24,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/space_engineers/install</HostDir>
+      <HostDir>/mnt/user/appdata/space_engineers</HostDir>
       <ContainerDir>/mnt/steam/space-engineers-server</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/space_engineers/data</HostDir>
-      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application\ Data/SpaceEngineersDedicated</ContainerDir>
+      <HostDir>/mnt/user/appdata/steamcmd</HostDir>
+      <ContainerDir>/home/steam/steamcmd</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
