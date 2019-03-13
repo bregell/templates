@@ -30,10 +30,20 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/space_engineers/appdata</HostDir>
-      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application\ Data/SpaceEngineersDedicated</ContainerDir>
+      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application Data/SpaceEngineersDedicated</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Config
+       Type="Variable"
+       Name="Server Name"
+       Target="SERVER_NAME"
+       Default="DefaultSavePath"
+       Description="This is the name and path to the server save"
+       Mask="false"
+       Display="always"
+       Required="true">DefaultSavePath
+  </Config>
   <Icon>https://spaceengineerswiki.com/images/1/1b/S_e_logo_black.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
