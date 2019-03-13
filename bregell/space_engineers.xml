@@ -29,8 +29,8 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/steamcmd</HostDir>
-      <ContainerDir>/home/steam/steamcmd</ContainerDir>
+      <HostDir>/mnt/user/appdata/space_engineers/appdata</HostDir>
+      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application\ Data/SpaceEngineersDedicated</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
