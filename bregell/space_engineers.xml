@@ -25,12 +25,12 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/space_engineers</HostDir>
-      <ContainerDir>/mnt/steam/space-engineers-server</ContainerDir>
+      <ContainerDir>/mnt/root/space-engineers-server</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/space_engineers/appdata</HostDir>
-      <ContainerDir>/home/steam/.wine/drive_c/users/steam/Application Data/SpaceEngineersDedicated</ContainerDir>
+      <ContainerDir>/home/root/.wine/drive_c/users/root/Application Data/SpaceEngineersDedicated</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
