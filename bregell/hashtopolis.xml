@@ -1,0 +1,80 @@
+volumes:
+  import: {}
+  files: {}
+  inc: {}
+  locks: {}
+  mysql: {}
+  
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>hashtopis</Name>
+  <Description>Hashtopolis Server</Description>
+  <Registry>https://hub.docker.com/r/kpeiruza/hashtopolis</Registry>
+  <Repository>kpeiruza/hashtopolis</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>H8_USER</Name>
+      <Value>root</Value>
+    </Variable>
+    <Variable>
+      <Name>H8_PASS</Name>
+      <Value>verySecret</Value>
+    </Variable>
+    <Variable>
+      <Name>H8_EMAIL</Name>
+      <Value>root@localhost</Value>
+    </Variable>
+    <Variable>
+      <Name>MYSQL_HOST</Name>
+      <Value>mysql</Value>
+    </Variable>
+    <Variable>
+      <Name>MYSQL_PORT</Name>
+      <Value>3306</Value>
+    </Variable>
+    <Variable>
+      <Name>MYSQL_ROOT_PASSWORD</Name>
+      <Value>verySecret</Value>
+    </Variable>
+    <Variable>
+      <Name>MYSQL_DB</Name>
+      <Value>hashtopolis</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hashtopolis/import</HostDir>
+      <ContainerDir>/var/www/html/import</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hashtopolis/files</HostDir>
+      <ContainerDir>/var/www/html/files</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hashtopolis/inc</HostDir>
+      <ContainerDir>/var/www/html/inc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hashtopolis/inc/utils/locks</HostDir>
+      <ContainerDir>/var/www/html/utils/utils/locks</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <ExtraParams></ExtraParams>
+</Container>
